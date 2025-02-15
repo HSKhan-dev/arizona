@@ -1,0 +1,191 @@
+/* =====================================
+   RESET & GLOBAL STYLES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+/* =====================================
+     HEADER & NAVIGATION
+  ===================================== */
+  header {
+    background-color: #0F0F0F;
+    padding: 20px 0;
+    border-bottom: 1px solid #BFA64A;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #BFA64A !important; /* Cool blue on hover */
+  }
+
+/* =====================================
+     SECTION ONE (Hero)
+  ===================================== */
+  .section-one {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+  }
+ 
+  .section-one h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .section-one h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #03A9F4; /* Cool blue */
+  }
+  
+  .section-one p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+     FOOTER & COPYRIGHT
+  ===================================== */
+  footer {
+    background-color: #0F0F0F;
+    padding: 40px 0;
+  }
+  
+  footer h3,
+  footer h4 {
+    color: #fff;
+  }
+  
+  footer p,
+  footer li,
+  footer a {
+    color: #CCCCCC;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a:hover {
+    color: #BFA64A;
+  }
+  
+  .copyright {
+    background-color: #2f2d2d;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #AAAAAA;
+  }
+
+  /* =====================================
+   Responsive Adjustments (max-width: 768px)
+===================================== */
+@media (max-width: 768px) {
+    /* Ensure no horizontal overflow */
+    html, body {
+      overflow-x: hidden;
+    }
+    
+    /* Make the header container use flex layout */
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+    
+    /* Remove Bootstrap row defaults in header */
+    header .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+    }
+    
+    /* Display logo and toggle side-by-side */
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Ensure the toggle button is visible and styled */
+    .navbar-toggler {
+      display: inline-block;
+      margin-left: 10px;
+      /* Removed negative margin */
+      border-color: #BFA64A;
+      margin-top: -100px;
+    }
+    
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23BFA64A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    
+    /* Ensure the navigation (col-lg-8) is aligned to the right */
+    header .col-lg-8 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    
+    /* When collapsed, the navbar-collapse takes full width */
+    .navbar-collapse {
+      width: 100%;
+    }

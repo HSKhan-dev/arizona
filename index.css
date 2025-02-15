@@ -1,0 +1,351 @@
+/* =====================================
+   RESET & GLOBAL STYLES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* =====================================
+     HEADER & NAVIGATION
+  ===================================== */
+  header {
+    background-color: #0F0F0F;
+    padding: 20px 0;
+    border-bottom: 1px solid #BFA64A;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #BFA64A !important; /* Cool blue on hover */
+  }
+  
+  /* =====================================
+     SECTION BACKGROUNDS (Distinct Dark Contrasts)
+  ===================================== */
+  .section-one {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+  }
+  
+  .section-two {
+    padding: 60px 0;
+    background-color: #141414;
+    text-align: center;
+  }
+  
+  .section-three {
+    padding: 60px 0;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .section-four {
+    padding: 60px 0;
+    background-color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .section-five {
+    padding: 60px 0;
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .section-six {
+    padding: 60px 0;
+    background-color: #181818;
+    text-align: center;
+  }
+  
+  /* =====================================
+     SECTION ONE (Hero)
+  ===================================== */
+  .section-one h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .section-one h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #03A9F4; /* Cool blue */
+  }
+  
+  .section-one p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* =====================================
+     SECTION TWO (Our Services Intro)
+     -- Equalized & Centered Images --
+  ===================================== */
+  .section-two .col-lg-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .section-two img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .section-two p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  /* =====================================
+     SECTIONS THREE, FOUR & FIVE (Content Areas)
+     Two-column layouts with text & images
+  ===================================== */
+  .section-three h1,
+  .section-four h1,
+  .section-five h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: cadetblue;
+  }
+  
+  .section-three p,
+  .section-four p,
+  .section-five p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Center text on smaller devices */
+  @media (max-width: 768px) {
+    .section-three p,
+    .section-four p,
+    .section-five p {
+      text-align: center;
+    }
+  }
+  
+  /* Ensure images inside these sections are centered */
+  .section-three img,
+  .section-four img,
+  .section-five img {
+    margin: 0 auto;
+  }
+  
+  /* =====================================
+     GRADIENT BUTTONS (Cool Blue Gradient)
+  ===================================== */
+  .btn-grad {
+    background-image: linear-gradient(45deg, #2196F3, #03A9F4);
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-position 0.5s;
+    background-size: 200% auto;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center;
+    text-decoration: none;
+  }
+  
+  /* =====================================
+     SECTION SIX (Services Cards - Older Design)
+  ===================================== */
+  .section-six h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  .section-six{
+    background-color: #202020;
+  }
+  .section-six .card {
+    background-color: #1b1919;
+    border: none;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .section-six .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section-six .card img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #786106;  /* Contrast border for the image */
+    border-radius: 8px;
+  }
+  
+  .section-six .card h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #BFA64A;
+  }
+  
+  /* =====================================
+     FOOTER & COPYRIGHT
+  ===================================== */
+  footer {
+    background-color: #0F0F0F;
+    padding: 40px 0;
+  }
+  
+  footer h3,
+  footer h4 {
+    color: #fff;
+  }
+  
+  footer p,
+  footer li,
+  footer a {
+    color: #CCCCCC;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a:hover {
+    color: #BFA64A;
+  }
+  
+  .copyright {
+    background-color: #2f2d2d;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #AAAAAA;
+  }
+  
+ /* =====================================
+   Responsive Adjustments (max-width: 768px)
+===================================== */
+@media (max-width: 768px) {
+  /* Ensure no horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Make the header container use flex layout */
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  /* Remove Bootstrap row defaults in header */
+  header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Display logo and toggle side-by-side */
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ensure the toggle button is visible and styled */
+  .navbar-toggler {
+    display: inline-block;
+    margin-left: 10px;
+    /* Removed negative margin */
+    border-color: #BFA64A;
+    margin-top: -100px;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23BFA64A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Ensure the navigation (col-lg-8) is aligned to the right */
+  header .col-lg-8 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* When collapsed, the navbar-collapse takes full width */
+  .navbar-collapse {
+    width: 100%;
+  }
+  .section-two .col-lg-2 {
+    margin-left: 0;
+  }
+  /* Center headings, paragraphs, and buttons in sections */
+  .section-one h1,
+  .section-one h3,
+  .section-one p,
+  .btn-grad {
+    display: block;
+    margin: 20px auto;
+}
+}
+
